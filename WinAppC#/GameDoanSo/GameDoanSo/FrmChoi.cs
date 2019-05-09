@@ -72,7 +72,7 @@ namespace GameDoanSo
             {
                 timer1.Stop();
                 progressBar1.Value = 0;
-                MessageBox.Show("Wow You are win!");
+                MessageBox.Show("Congratulation! You are win!");
                 return;
             }
             string url = Program.url+"cauhoi/ran";
@@ -156,7 +156,8 @@ namespace GameDoanSo
             {
                 btnCauA.Enabled = btnCauB.Enabled = btnCauC.Enabled = btnCauD.Enabled = false;
                 timer1.Stop();
-                MessageBox.Show("Time out! you lost!", "", MessageBoxButtons.OK);
+                MessageBox.Show("Time out! you lost! " +
+                    " Your Scores: "+Program.Diem1, "", MessageBoxButtons.OK);
                 
             }
             else progressBar1.Value ++;

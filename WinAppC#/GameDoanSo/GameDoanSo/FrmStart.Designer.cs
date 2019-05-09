@@ -123,6 +123,7 @@
             // 
             // FrmStart
             // 
+            this.AcceptButton = this.btnBatDau;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(504, 511);
