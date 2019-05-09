@@ -186,6 +186,7 @@ namespace GameDoanSo
                 string result = reader.ReadToEnd();
                 if (result == "true")
                 {
+                    playSimpleSound();
 
                     dem++;
                     Program.Diem1 = dem * 10;
@@ -249,7 +250,11 @@ namespace GameDoanSo
             Program.frStart.Visible = true;
             Program.frStart.Refresh();
         }
-
+        private void playSimpleSound()
+        {
+            System.Media.SoundPlayer simpleSound = new System.Media.SoundPlayer(@"D:\DOWNLOAD\dingtingsound.wav");
+            simpleSound.Play();
+        }
         private void btnQuitGame_Click(object sender, EventArgs e)
         {
             timer1.Stop();
